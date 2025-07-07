@@ -12,5 +12,3 @@ To run the project, you need Python 3.8 or higher, a webcam, and the following d
 This project is well-suited for **bioinformatics education, hands-free sequence analysis while working in the lab, interactive workshops, or gesture-controlled UI experiments in computational biology**. It helps students and researchers understand DNA composition, amino acid translation, and ORF identification in a visually engaging and memorable way.
 
 Feel free to use, modify, and extend this project for learning and personal research. For any publication or professional use, please credit **Rushabh Wakade** as the author. Contributions are welcome, and suggestions for enhancements such as motif search, advanced ORF filtering, or integration with protein property prediction are encouraged.
-
-If you would like, I can prepare a **repository cover image, a badge summary section for GitHub, or convert your `dna_gesture1.mp4` into a GIF** for embedding in your README to enhance your project’s presentation for your GitHub or portfolio. Let me know whenever you are ready for the next step.
