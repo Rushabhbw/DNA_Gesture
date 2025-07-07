@@ -1,0 +1,11 @@
+Gene Name: OM489474.1
+Description: OM489474.1 Homo sapiens INS (INS) mRNA, partial cds, alternatively spliced
+Length: 366 bp
+GC%: 62.57
+AT%: 37.43
+Current View (position 0-60):
+DNA: AGCCCTCCAGGACAGGCTGCATCAGAAGAGGCCATCAAGCAGGTCTGTTCCAAGGGCCTT
+AA: SPPGQAASEEAIKQVCSKGL
+
+Detected ORFs:
+  No ORFs found.
