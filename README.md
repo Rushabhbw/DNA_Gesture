@@ -1,66 +1,16 @@
 # DNA_Gesture
-Hand-Gesture-Controlled DNA Sequence Viewer and Analyzer
-This project allows interactive exploration and analysis of DNA sequences using hand gestures via webcam. It integrates OpenCV, MediaPipe, and BioPython to visualize DNA chunks, translate them into amino acids, identify ORFs, and generate GC content and codon frequency plots—all controllable with finger gestures.
+**DNA\_Gesture** is a **hand-gesture-controlled DNA sequence viewer and analyzer** that allows interactive exploration and analysis of DNA sequences using your webcam. It integrates **OpenCV, MediaPipe, and BioPython** to display DNA chunks, translate them into amino acids, identify open reading frames (ORFs), and generate GC content and codon frequency plots, all controllable with your fingers. This project is designed to make DNA sequence exploration intuitive and hands-free, ideal for learning, demonstrations, or lab-side data visualization.
 
-Folder Structure:
-dna_gesture/
-├── codon_bar.png            # Bar plot of top 10 codons (auto-generated)
-├── dna_gesture_viewer.py    # Main Python script with gesture controls
-├── gc_plot.png              # GC% content plot across the sequence (auto-generated)
-├── gene_report.html         # HTML report with DNA chunk, AA, ORFs, plots (auto-generated)
-├── gene_summary.txt         # Text summary with ORFs and basic stats (auto-generated)
-└── your_sequence.fasta      # Example FASTA file to test the system
+The project folder includes the main Python script `dna_gesture_viewer.py`, which manages all webcam gesture detection and visualization, as well as auto-generated outputs including `gc_plot.png` for GC% plots across the sequence, `codon_bar.png` for the top 10 codon usage chart, `gene_report.html` for a clean, detailed HTML report, and `gene_summary.txt` for a quick text summary with ORFs and GC% for reference or documentation.
 
-🚀 Features
-✅ Hand Gesture Navigation:
-🖐️ 1 finger → Next DNA chunk
-🖐️ 2 fingers → Previous DNA chunk
-🖐️ 3 fingers → Show GC% of current chunk
-🖐️ 4 fingers → Export HTML report (gene_report.html)
-🖐️ 5 fingers → Save text summary (gene_summary.txt)
-> Press 'h' to show/hide gesture guide
-> Press 'q' or ESC to exit.
-✅ Visual DNA Chunk Viewer:
-Color-coded base display:
-A: Blue, T: Pink, G: Green, C: Purple.
-> Amino acid translation of current chunk displayed.
-> Top detected ORFs with positions and translations shown.
-> GC% and codon frequency plots displayed live.
-✅ Automated Analysis and Reports:
-> gc_plot.png: GC% plot across the entire sequence.
-> codon_bar.png: Top 10 codon usage chart.
-> gene_report.html: Clean, detailed HTML report.
-> gene_summary.txt: Quick report for notes or documentation.
+Using the system is straightforward. Place your `.fasta` DNA sequence file in the folder and run `python dna_gesture_viewer.py`. A file dialog will open to let you select your FASTA file, after which your webcam will activate for gesture-based navigation. You can use one finger to move to the next DNA chunk, two fingers to move to the previous chunk, three fingers to display the GC% of the current chunk, four fingers to export a detailed HTML report, and five fingers to save a quick summary text file. You can press the `h` key to show or hide the gesture guide overlay and `q` or `ESC` to exit the program at any time.
 
-⚙️ Requirements
-Python 3.8+, Webcam
-Dependencies:
-opencv-python, mediapipe, biopython, matplotlib, numpy, tkinter (preinstalled with Python).
-Install all with:
-pip install opencv-python mediapipe biopython matplotlib numpy
+The system visually displays DNA bases in color (blue for A, pink for T, green for G, and purple for C) alongside their translated amino acid sequences. It also shows detected ORFs with their positions and translated amino acid sequences, providing a live, interactive exploration experience. Automated plots of GC content and codon usage are generated and displayed, making it easy to understand the sequence composition during navigation.
 
-🧪 Usage
-1️⃣ Place your .fasta DNA sequence file in the folder.
-2️⃣ Run:
-> python dna_gesture_viewer.py
-3️⃣ A file dialog will appear to select your .fasta file.
-4️⃣ Use hand gestures in front of your webcam to:
-Navigate chunks, View GC%, Export HTML reports, Generate text summaries, and explore your DNA sequence hands-free.
+To run the project, you need Python 3.8 or higher, a webcam, and the following dependencies: `opencv-python`, `mediapipe`, `biopython`, `matplotlib`, `numpy`, and `tkinter` (which comes preinstalled with Python). You can install all dependencies using `pip install opencv-python mediapipe biopython matplotlib numpy`.
 
-📊 Outputs
-> gc_plot.png – GC% plot across your sequence.
-> codon_bar.png – Top 10 codon frequency chart.
-> gene_report.html – Shareable, clean HTML report.
-> gene_summary.txt – Quick summary with ORFs, GC%, and translation.
+This project is well-suited for **bioinformatics education, hands-free sequence analysis while working in the lab, interactive workshops, or gesture-controlled UI experiments in computational biology**. It helps students and researchers understand DNA composition, amino acid translation, and ORF identification in a visually engaging and memorable way.
 
-💡 Applications
-✅ Teaching bioinformatics interactively
-✅ Hands-free DNA analysis while working at the bench
-✅ Gesture-controlled UI experiments for scientific data
-✅ Quick DNA chunk analysis and ORF finding
+Feel free to use, modify, and extend this project for learning and personal research. For any publication or professional use, please credit **Rushabh Wakade** as the author. Contributions are welcome, and suggestions for enhancements such as motif search, advanced ORF filtering, or integration with protein property prediction are encouraged.
 
-✍️ Author
-Rushabh Wakade
-
-📜 License
-This project is open for academic, learning, and personal use. For any publication or commercial use, please credit the author.
+If you would like, I can prepare a **repository cover image, a badge summary section for GitHub, or convert your `dna_gesture1.mp4` into a GIF** for embedding in your README to enhance your project’s presentation for your GitHub or portfolio. Let me know whenever you are ready for the next step.
